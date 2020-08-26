@@ -1,0 +1,156 @@
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  /* position: fixed; */
+  z-index: 99;
+  max-height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+
+.nav-one img {
+  width: 12rem;
+  height: 80px;
+  object-fit: cover;
+}
+
+.nav-one {
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-two {
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+
+.nav-one ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  list-style: none;
+}
+
+.nav-two ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  list-style: none;
+
+
+
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-one .desktop-nav-one {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  justify-content: center;
+  position: relative;
+
+}
+
+@media screen and (min-width: 1000px) {
+  .nav-one .mobile-nav {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .nav-two.desktop-nav-two {
+    display: none;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .nav-two ul {
+    display: none;
+  }
+}
+
+
+
+nav li {
+  cursor: pointer;
+}
+
+nav li:hover {
+  color: darkgreen;
+}
+
+
+nav button {
+  background-color: orangered;
+  color: white;
+  border: 0;
+  margin-right: 15px;
+  cursor: pointer;
+  width: 150px;
+  height: 45px;
+}
+
+@media screen and (max-width: 1000px) {
+  nav button {
+    display: none;
+  }
+}
+
+.fa.fa-bars {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  .fa.fa-bars {
+    display: none;
+  }
+}
+
+.far {
+  font-size: 2rem;
+  cursor: pointer;
+
+}
