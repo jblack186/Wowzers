@@ -24,14 +24,14 @@ body {
 }
 
 nav {
-  /* position: fixed; */
-  z-index: 99;
+  position: fixed;
   max-height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   background-color: white;
+  z-index: 9000;
 }
 
 .nav-one img {
@@ -81,16 +81,42 @@ nav {
 }
 
 .mobile-nav {
+  position: fixed;
   display: flex;
   flex-direction: column;
-  z-index: 100;
+  z-index: 99;
   justify-content: center;
-  position: relative;
+  height: 100%;
+  background-color: darkgreen;
+  width: 0;  
+  opacity: .96;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: .8s;
+  align-content: center;
+}
+
+.mobile-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  text-decoration: none;
+  color: black;
+  border-top: solid lime 1px;
+  border-bottom: solid lime 1px;
+
+
 
 }
 
+
+.close-icon {
+  display: none;
+}
+
 @media screen and (min-width: 1000px) {
-  .nav-one .mobile-nav {
+  .mobile-nav {
     display: none;
   }
 }
@@ -141,6 +167,7 @@ nav button {
 .fa.fa-bars {
   font-size: 2rem;
   cursor: pointer;
+  padding-left: 150px;
 }
 
 @media screen and (min-width: 1000px) {

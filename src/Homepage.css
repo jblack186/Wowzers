@@ -1,0 +1,95 @@
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.banner video {
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+}
+
+.banner .content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 35px;
+}
+
+
+.banner .content h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 4.5em;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 25px;
+
+}
+
+.banner .content p {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #fff;
+
+}
+
+.hero-buttons {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner button {
+  cursor: pointer;
+  height: 74px;
+  width: 210px;
+  color: white
+}
+
+.banner button.button-one {
+  background-color:darkgreen;
+  font-size: 1.3rem;
+}
+
+.banner button.button-two {
+  background-color: transparent;
+  font-size: 1.3rem;
+  border: white 1px solid;
+  transition: opacity .5s;
+}
+
+.banner button.button-two:hover {
+  opacity: .7;
+}
