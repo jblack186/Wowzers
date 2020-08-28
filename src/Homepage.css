@@ -75,7 +75,7 @@ section, summary, time, mark, audio, video {
   cursor: pointer;
   height: 74px;
   width: 210px;
-  color: white
+  color: white;
 }
 
 .banner button.button-one {

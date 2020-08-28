@@ -5,13 +5,17 @@ import Salt from './vid/salt-mae.mp4';
 
 
 const Homepage = e => {
+  var x = window.matchMedia("(max-width: 1000px)")
+ // Call listener function at run time
 
   function close() {
+    if (x.matches) {
     document.querySelector('.mobile-nav').style.width = '0px';
     document.querySelector('.mobile-nav').style.marginLeft = '0px';
     document.querySelector('.fa-bars').style.display = 'flex';
     document.querySelector('.close-icon').style.display = 'none';
     document.querySelector('.banner').style.filter = 'blur(0px)';
+    }
   
   }
 

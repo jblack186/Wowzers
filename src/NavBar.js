@@ -11,7 +11,7 @@ function closeSlideMenu() {
   document.querySelector('.mobile-nav').style.marginLeft = '0px';
   document.querySelector('.fa-bars').style.display = 'flex';
   document.querySelector('.close-icon').style.display = 'none';
-  document.querySelector('.banner').style.filter = 'blur(0px)';
+  // document.querySelector('.banner').style.filter = 'blur(0px)';
 
 
 }
@@ -23,7 +23,8 @@ function openSlideMenu() {
   document.querySelector('.mobile-nav').style.marginLeft = '0px';
   document.querySelector('.close-icon').style.display = 'flex';
   document.querySelector('.fa-bars').style.display = 'none';
-  document.querySelector('.banner').style.filter = 'blur(5px)';
+
+  // document.querySelector('.banner').style.filter = 'blur(5px)';
 
 
 
