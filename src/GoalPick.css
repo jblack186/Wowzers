@@ -33,17 +33,60 @@
   display: none;
 }
 
-.choices-text h3{
-  color: white;
-  font-size: 3rem;
+.choices-text {
   position: absolute;
   top: 50%;
   bottom: 50%;
   left: 30%;
   right: 30%;
-  display: flex;
-  align-items: center;
+
 }
+
+@media screen and (max-width: 1000px) {
+  .choices-text {
+    top: 20%;
+    bottom: 80%;
+    font-size: 2rem;
+  
+  }
+}
+
+.choices-text h3{
+  color: white;
+  font-size: 3rem;
+  padding-bottom: 15px;
+
+}
+
+@media screen and (max-width: 1000px) {
+  .choices-text h3{
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+  
+  }
+}
+
+
+.see-thru{
+  width: 200px;
+  color: white;
+  background-color: transparent;
+  font-size: 3rem;
+}
+
+.choices-button {
+  width: 200px;
+  color: white;
+  background-color: green;
+  font-size: 3rem;
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+}
+
+
+
 
 .choices {
   height: 100%;

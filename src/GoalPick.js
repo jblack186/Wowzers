@@ -55,6 +55,7 @@ console.log(pickGoal)
           </div>
           <div className='choices-text'>
             <h3>WHAT DO YOU LOOK FOR IN RECIPES?</h3>
+            <button className={pickGoal === '' ? 'see-thru' : 'choices-button'}>Next</button>
           </div>
       </div>
       <div className='choices'>
