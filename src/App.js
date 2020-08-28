@@ -4,6 +4,7 @@ import './App.css';
 import Homepage from './Homepage';
 import './NavBar.css'
 import GoalPick from './GoalPick';
+import DashBoard from './Dashboard';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 
      <Route exact path='/home' render= {(props) => { return <Homepage  {...props}  />}} />
      <Route exact path='/goal-pick' render= {(props) => { return <GoalPick  {...props}  />}} />
+     <Route exact path='/dashboard' render= {(props) => { return <DashBoard  {...props}  />}} />
 
     </div>
   );
