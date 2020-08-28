@@ -88,12 +88,12 @@ nav {
   z-index: 99;
   justify-content: center;
   height: 100%;
-  background-color: darkgreen;
+  background-color: rgb(105,105,105);
   width: 0;  
   opacity: .96;
   overflow-x: hidden;
   padding-top: 60px;
-  transition: .8s;
+  transition: .5s;
   align-content: center;
 }
 
@@ -103,13 +103,17 @@ nav {
   justify-content: center;
   height: 100px;
   text-decoration: none;
-  color: black;
-  border-top: solid lime 1px;
-  border-bottom: solid lime 1px;
-
-
+  color: white;
+  border-top: solid darkslategray 1px;
+  border-bottom: solid darkslategray 1px;
 
 }
+
+.mobile-nav a:hover {
+  background-color: darkslategrey;
+
+}
+
 
 
 .close-icon {
