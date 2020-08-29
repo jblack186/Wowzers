@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import Cookie from './img/almond-cookies.jpg';
 import Flour from './img/flourincup.jpg';
 import Placeholder from './img/pick-placeholer.jpg';
@@ -20,24 +21,37 @@ console.log(pickGoal)
     e.preventDefault();
     
     setPickGoal('flour');
+    localStorage.setItem('pick', 'low-carb')
   }
 
   const setChoiceSodium = e => {
     e.preventDefault();
     
     setPickGoal('sodium');
+    localStorage.setItem('pick', 'low-sodium')
+
   }
 
   const setChoiceFat = e => {
     e.preventDefault();
     
     setPickGoal('fat');
+    localStorage.setItem('pick', 'low-fat')
+
   }
 
   const setChoiceSugar = e => {
     e.preventDefault();
     
     setPickGoal('sugar');
+    localStorage.setItem('pick', 'low-sugar')
+
+  }
+
+  const checkButton = e => {
+    if (pickGoal === '') {
+      alert('must pick one')
+    }
   }
 
   
@@ -55,7 +69,9 @@ console.log(pickGoal)
           </div>
           <div className='choices-text'>
             <h3>WHAT DO YOU LOOK FOR IN RECIPES?</h3>
-            <button className={pickGoal === '' ? 'see-thru' : 'choices-button'}>Next</button>
+            <Link  to='./dashboard'>
+              <button onClick='checkButton' className={pickGoal === '' ? 'see-thru' : 'choices-button'}>Next</button> 
+            </Link>
           </div>
       </div>
       <div className='choices'>

@@ -1,0 +1,46 @@
+.search-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-button {
+  width: 100%;
+}
+
+.input-button input {
+  padding-left: 12px;
+}
+
+.search-bar {
+  margin-top: 100px;
+  width: 50%;
+  height: 40px;
+  border-radius: 30px;
+  border: white;
+  background-color: lightgray;
+}
+
+.search-button {
+  height: 40px;
+  width: 50px;
+  border-radius: 30px;
+  margin-left: 10px;
+  border: white;
+  cursor: pointer;
+}
+
+.dashboard-container img.dinner-pic {
+  padding-top: 20px;
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+@media screen and (max-width: 1000px) {
+  .dashboard-container img.dinner-pic {
+    height: 200px;
+  }
+}
