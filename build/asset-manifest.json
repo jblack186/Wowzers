@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.20f43c53.chunk.css",
+    "main.js": "/static/js/main.b19f6cd3.chunk.js",
+    "main.js.map": "/static/js/main.b19f6cd3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bb6d6951.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bb6d6951.js.map",
+    "static/js/2.2f17396c.chunk.js": "/static/js/2.2f17396c.chunk.js",
+    "static/js/2.2f17396c.chunk.js.map": "/static/js/2.2f17396c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.7a54ae0724ad8f49992629fb54de17a8.js": "/precache-manifest.7a54ae0724ad8f49992629fb54de17a8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.20f43c53.chunk.css.map": "/static/css/main.20f43c53.chunk.css.map",
+    "static/js/2.2f17396c.chunk.js.LICENSE.txt": "/static/js/2.2f17396c.chunk.js.LICENSE.txt",
+    "static/media/almond-cookies.jpg": "/static/media/almond-cookies.12cd3ee3.jpg",
+    "static/media/dashboard1.jpg": "/static/media/dashboard1.a01f7b90.jpg",
+    "static/media/flourincup.jpg": "/static/media/flourincup.6f32e1bc.jpg",
+    "static/media/lowsodium.jpg": "/static/media/lowsodium.9921fe5b.jpg",
+    "static/media/lowsugar.jpg": "/static/media/lowsugar.a77f5272.jpg",
+    "static/media/pick-placeholer.jpg": "/static/media/pick-placeholer.a4ec8589.jpg",
+    "static/media/salt-mae.mp4": "/static/media/salt-mae.6b9d99c6.mp4",
+    "static/media/wowzers-logo.png": "/static/media/wowzers-logo.5542f5fa.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb6d6951.js",
+    "static/js/2.2f17396c.chunk.js",
+    "static/css/main.20f43c53.chunk.css",
+    "static/js/main.b19f6cd3.chunk.js"
+  ]
+}

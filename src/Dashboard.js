@@ -6,6 +6,9 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import Dinner from './img/dashboard1.jpg';
 import food from './Foods';
+import {NavLink} from 'react-router-dom';
+import { Router } from 'react-router';
+import { dom } from '@fortawesome/fontawesome-svg-core';
 
 const DashBoard = e => {
   const [recommendations, setRecommendations] = useState([]);
@@ -21,11 +24,11 @@ useEffect(() => {
     setRecommendations(data.hits);
     
 
-    console.log(pick)
+    console.log(data.hits)
     
     
   }
-  // sendApiRequest();
+  sendApiRequest();
 
 }, [])
 
@@ -42,11 +45,21 @@ console.log('food',food)
         </div>
       <img className='dinner-pic' src={Dinner} alt='dashboard' />
       </div>
-      <div className='rec-container'>
-        {food.map(item => {
-          return <div> 
-                    <img src={item.image} />
-                  </div>
+      <div className='item-container'>
+        {recommendations.map(item => {
+          return     <div className='item'>
+                      <img src={item.recipe.image} />
+                      <div className='labels'>
+                      <p className='item-label'>{item.recipe.label}</p>
+                      <p>{item.recipe.dietLabels}</p>
+                      </div>
+                      <p className='ingredients'>{item.recipe.ingredientLines}</p>
+                      <NavLink innerRef={item.recipe.uri}><button className='recipe-button'>Get Recipe here</button></NavLink>
+
+
+
+                    </div>
+                  
         })}
       </div>
     </div>
