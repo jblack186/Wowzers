@@ -34,6 +34,7 @@ nav {
   z-index: 9000;
 }
 
+
 .nav-one img {
   width: 12rem;
   height: 80px;
@@ -172,7 +173,7 @@ nav button {
 .fa.fa-bars {
   font-size: 2rem;
   cursor: pointer;
-  padding-left: 150px;
+  padding-left: 120px;
 }
 
 @media screen and (min-width: 1000px) {
