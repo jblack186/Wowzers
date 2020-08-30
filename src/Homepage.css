@@ -71,6 +71,14 @@ section, summary, time, mark, audio, video {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 800px) {
+  .hero-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
 .banner button {
   cursor: pointer;
   height: 74px;
@@ -83,11 +91,19 @@ section, summary, time, mark, audio, video {
   font-size: 1.3rem;
 }
 
+
+
 .banner button.button-two {
   background-color: transparent;
   font-size: 1.3rem;
   border: white 1px solid;
   transition: opacity .5s;
+}
+
+@media screen and (max-width: 800px) {
+  .banner button.button-two {
+    display: none;
+  }
 }
 
 .banner button.button-two:hover {
