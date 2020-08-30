@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import NavBar from './NavBar';
 import './Homepage.css';
 import Salt from './vid/salt-mae.mp4';
+import { Link } from 'react-router-dom';
 
 
 const Homepage = e => {
@@ -42,8 +43,8 @@ const Homepage = e => {
           <h1>Wowzers</h1>
           <p>Knowing what's right for your health can be a challenge. Let us lend a helping hand.</p>
           <div class="hero-buttons">
-            <button class="button-one">Health Goals</button>
-            <button class="button-two">Taste Preferences</button>
+           <Link to='goal-pick' ><button class="button-one">Health Goals</button></Link>
+             <Link to='/goal-pick' ><button class="button-two">Start Here</button></Link>
         </div>
         </div>
       </div>

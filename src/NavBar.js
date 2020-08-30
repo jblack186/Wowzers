@@ -3,7 +3,7 @@ import './NavBar.css';
 import Logo from './img/wowzers-logo.png'
 import { faBars, faWindowClose } from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-
+import {Link} from 'react-router-dom';
 
 
 function closeSlideMenu() {
@@ -39,7 +39,7 @@ const NavBar = e => {
     <div>
       <nav>
         <div className="nav-one">
-          <img src={Logo} alt="wowzers-logo" />
+          <Link to='/home' ><img src={Logo} alt="wowzers-logo" /></Link>
           <ul className="desktop-nav-one">
             <li>What We Do</li>
             <li>Our Solutions</li>

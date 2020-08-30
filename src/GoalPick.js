@@ -28,7 +28,7 @@ console.log(pickGoal)
     e.preventDefault();
     
     setPickGoal('sodium');
-    localStorage.setItem('pick', 'low-sodium')
+    localStorage.setItem('pick', 'balanced')
 
   }
 
@@ -44,7 +44,7 @@ console.log(pickGoal)
     e.preventDefault();
     
     setPickGoal('sugar');
-    localStorage.setItem('pick', 'low-sugar')
+    localStorage.setItem('pick', 'low-carb')
 
   }
 
@@ -82,7 +82,7 @@ console.log(pickGoal)
           </div>
           <div onClick={setChoiceSodium}  className='choice-box'>
             <FontAwesomeIcon icon={faCheckCircle} style={pickGoal === 'sodium' ? {color:'green', fontSize: '40px', paddingBottom: '15px'} : {color:'white', fontSize: '40px', paddingBottom: '15px'}  }/>
-            <li style={pickGoal === 'sodium' ? {color:'green'} : {color:'white'}}>Low Sodium</li>
+            <li style={pickGoal === 'sodium' ? {color:'green'} : {color:'white'}}>Balanced</li>
           </div>
           <div  onClick={setChoiceFat} className='choice-box'>
             <FontAwesomeIcon icon={faCheckCircle} style={pickGoal === 'fat' ? {color:'green', fontSize: '40px', paddingBottom: '15px'} : {color:'white', fontSize: '40px', paddingBottom: '15px'}  }/>

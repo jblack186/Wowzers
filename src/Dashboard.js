@@ -18,7 +18,7 @@ useEffect(() => {
     let pick = localStorage.getItem('pick');
     let APP_ID = "87fed42d";
     let API_KEY = "68321153310172e99b2609b96cd9e726";	
-    let response = await fetch(`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=pasta&diet=${pick}`);
+    let response = await fetch(`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=food&diet=${pick}`);
     console.log(response)
     let data = await response.json()
     setRecommendations(data.hits);
@@ -53,8 +53,8 @@ console.log('food',food)
                       <p className='item-label'>{item.recipe.label}</p>
                       <p>{item.recipe.dietLabels}</p>
                       </div>
-                      <p className='ingredients'>{item.recipe.ingredientLines}</p>
-                      <NavLink innerRef={item.recipe.uri}><button className='recipe-button'>Get Recipe here</button></NavLink>
+                      <p className='ingredients'><p style={{fontWeight: 'bold'}}>What you will need</p> {item.recipe.ingredientLines}</p>
+                      <button className='recipe-button'>Get Recipe here</button>
 
 
 
