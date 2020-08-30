@@ -39,7 +39,7 @@ const NavBar = e => {
     <div>
       <nav>
         <div className="nav-one">
-          <Link to='/home' ><img src={Logo} alt="wowzers-logo" /></Link>
+          <Link to='/home' ><img className='wow-logo' src={Logo} alt="wowzers-logo" /></Link>
           <ul className="desktop-nav-one">
             <li>What We Do</li>
             <li>Our Solutions</li>

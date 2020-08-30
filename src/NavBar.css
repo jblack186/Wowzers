@@ -35,10 +35,11 @@ nav {
 }
 
 
+
 .nav-one img {
   width: 12rem;
   height: 80px;
-  object-fit: cover;
+  object-fit: contain;
   cursor: pointer;
 }
 
