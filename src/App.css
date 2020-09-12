@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  
-}
+  font-family: 'Righteous', cursive;}
 
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Righteous&display=swap');
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -53,8 +53,14 @@ console.log('food',food)
                       <p className='item-label'>{item.recipe.label}</p>
                       <p>{item.recipe.dietLabels}</p>
                       </div>
-                      <p className='ingredients'><p style={{fontWeight: 'bold'}}>What you will need</p> {item.recipe.ingredientLines}</p>
-                      <button className='recipe-button'>Get Recipe here</button>
+                      <p className='ingredients'><p style={{fontWeight: 'bold'}}>What you will need</p> {item.recipe.ingredientLines[0]}</p>
+                      <p>{item.recipe.ingredientLines[1]}</p>
+                      <p>{item.recipe.ingredientLines[2]}</p>
+                      <p>{item.recipe.ingredientLines[3]}</p>
+                      <p>and more...</p>
+
+
+                      <a href={item.recipe.url}><button className='recipe-button'>Get Recipe here</button> </a>
 
 
 
