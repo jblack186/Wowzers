@@ -49,21 +49,19 @@ console.log('food',food)
         {recommendations.map(item => {
           return     <div className='item'>
                       <img src={item.recipe.image} />
-                      <div className='labels'>
-                      <p className='item-label'>{item.recipe.label}</p>
-                      <p>{item.recipe.dietLabels}</p>
+                      <div className='label-ing-button'>
+                        <div className='labels'>
+                          <p className='item-label'>{item.recipe.label}</p>
+                          <p>{item.recipe.dietLabels}</p>
+                        </div>
+                        <div className='ingredient-container'>
+                          <p className='ingredients'><p style={{fontWeight: 'bold'}}><p className='need'>What you     will need:</p></p> {item.recipe.ingredientLines[0]}</p>
+                          <p className='ingredients'>{item.recipe.ingredientLines[1]}</p>
+                          <p className='ingredients'>{item.recipe.ingredientLines[2]}</p>
+                          <p className='ingredients'>and more...</p>
+                        </div>
+                        <a href={item.recipe.url}><button className='recipe-button'>Get Recipe here</button> </a>
                       </div>
-                      <p className='ingredients'><p style={{fontWeight: 'bold'}}>What you will need</p> {item.recipe.ingredientLines[0]}</p>
-                      <p>{item.recipe.ingredientLines[1]}</p>
-                      <p>{item.recipe.ingredientLines[2]}</p>
-                      <p>{item.recipe.ingredientLines[3]}</p>
-                      <p>and more...</p>
-
-
-                      <a href={item.recipe.url}><button className='recipe-button'>Get Recipe here</button> </a>
-
-
-
                     </div>
                   
         })}

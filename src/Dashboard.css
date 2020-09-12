@@ -59,13 +59,17 @@
 
 .item {
   width: 350px;
-  height: 600px;
+  height: 650px;
   display: flex;
   flex-direction: column;
 }
 
 .items-container img {
   width:300px;
+}
+
+.label-ing-button {
+  justify-items: space-around;
 }
 
 .labels {
@@ -80,19 +84,30 @@
   width: 250px;
 }
 
+.ingredient-container {
+  height: 200px;
+  line-height: 25px;
+  padding-bottom: 8px;
+}
+
 .ingredients {
   text-align: left;
 }
 
+.need {
+  padding-bottom: 8px;
+}
+
 .recipe-button {
+  width: 300px;
   cursor: pointer;
-  margin-top: 10px;
+  
   border-radius: 30px;
   border: white;
   height: 40px;
   transition: .3s;
-  margin-top: auto;
-  margin-bottom: 30px;
+  
+
 }
 
 .recipe-button:hover {
