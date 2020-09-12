@@ -55,9 +55,10 @@ console.log('food',food)
                           <p>{item.recipe.dietLabels}</p>
                         </div>
                         <div className='ingredient-container'>
-                          <p className='ingredients'><p style={{fontWeight: 'bold'}}><p className='need'>What you     will need:</p></p> {item.recipe.ingredientLines[0]}</p>
-                          <p className='ingredients'>{item.recipe.ingredientLines[1]}</p>
-                          <p className='ingredients'>{item.recipe.ingredientLines[2]}</p>
+                          <p className='ingredients'><p style={{fontWeight: 'bold'}}><p className='need'>What you     will need:</p></p> {item.recipe.ingredientLines[0].length < 70 ? item.recipe.ingredientLines[0] : null }</p>
+                          {console.log(item.recipe.ingredientLines[1].length)}
+                          {item.recipe.ingredientLines[1].length < 70 ? <p className='ingredients'>{item.recipe.ingredientLines[1]}</p> : null}
+                          {item.recipe.ingredientLines[2].length < 70 ? <p className='ingredients'>{item.recipe.ingredientLines[2]}</p> : null}
                           <p className='ingredients'>and more...</p>
                         </div>
                         <a href={item.recipe.url}><button className='recipe-button'>Get Recipe here</button> </a>

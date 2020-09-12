@@ -1,8 +1,13 @@
 .App {
   text-align: center;
-  font-family: 'Righteous', cursive;}
+  font-family: 'Bangers', cursive;
+  font-size: 1.2rem;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Long+Cang&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
