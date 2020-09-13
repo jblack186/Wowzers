@@ -44,7 +44,7 @@ console.log(pickGoal)
     e.preventDefault();
     
     setPickGoal('sugar');
-    localStorage.setItem('pick', 'low-carb')
+    localStorage.setItem('pick', 'high-protein')
 
   }
 
@@ -90,7 +90,7 @@ console.log(pickGoal)
           </div>
           <div  onClick={setChoiceSugar} className='choice-box'>
             <FontAwesomeIcon icon={faCheckCircle} style={pickGoal === 'sugar' ? {color:'green', fontSize: '40px', paddingBottom: '15px'} : {color:'white', fontSize: '40px', paddingBottom: '15px'}  }/>
-          <li style={pickGoal === 'sugar' ? {color:'green'} : {color:'white'}}>Low Sugar</li>
+          <li style={pickGoal === 'sugar' ? {color:'green'} : {color:'white'}}>High Protein</li>
           </div>
         </ul>
       </div>

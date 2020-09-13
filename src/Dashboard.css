@@ -1,3 +1,6 @@
+.dashboard-container {
+}
+
 .search-pic {
   display: flex;
   flex-direction: column;
@@ -5,6 +8,12 @@
   align-items: center;
   width: 95%;
   margin: 0 auto;
+  z-index: 10;
+  top: 0;
+}
+
+.search-pic img {
+
 }
 
 .input-button {
@@ -22,6 +31,7 @@
   border-radius: 30px;
   border: white;
   background-color: lightgray;
+
 }
 
 .search-button {
@@ -49,6 +59,7 @@
 
 
 .item-container {
+  z-index: 99999;
   margin: 0 auto;
   padding-top: 50px;
   width: 80%;
@@ -57,6 +68,7 @@
   justify-content: space-around;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1rem;
+
 }
 
 .item {

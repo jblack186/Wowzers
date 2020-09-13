@@ -12,20 +12,39 @@ import { dom } from '@fortawesome/fontawesome-svg-core';
 
 const DashBoard = e => {
   const [recommendations, setRecommendations] = useState([]);
+  const [search, setSearch] = useState();
+
+const searchHandler = e => {
+  setSearch(e.target.value);
+}
+console.log(search)
+
+async function searchSubmit (e) {
+  e.preventDefault();
+  if (search) {
+  let APP_ID = "87fed42d";
+  let API_KEY = "68321153310172e99b2609b96cd9e726";	
+  let response = await fetch(`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=${search}`);
+  let data = await response.json()
+  setRecommendations(data.hits);
+
+  }
+}
 
 useEffect(() => {
   async function sendApiRequest() {
     let pick = localStorage.getItem('pick');
     let APP_ID = "87fed42d";
     let API_KEY = "68321153310172e99b2609b96cd9e726";	
+    if (!search) {
     let response = await fetch(`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=food&diet=${pick}`);
     console.log(response)
     let data = await response.json()
     setRecommendations(data.hits);
+    console.log(data)
     
 
-    console.log(data.hits)
-    
+    }
     
   }
   sendApiRequest();
@@ -40,8 +59,10 @@ console.log('food',food)
       <NavBar />
       <div className='search-pic'>
         <div className='input-button'>
-          <input placeholder='Search' className='search-bar' />
-          <button className='search-button'>{<FontAwesomeIcon icon={faSearch}/> }</button>
+          <form onSubmit={searchSubmit} >
+            <input onChange={searchHandler} placeholder='Search' className='search-bar' />
+            <button type='submit' className='search-button'>{<FontAwesomeIcon icon={faSearch}/> }</button>
+          </form>
         </div>
       <img className='dinner-pic' src={Dinner} alt='dashboard' />
       </div>
@@ -55,7 +76,7 @@ console.log('food',food)
                           <p>{item.recipe.dietLabels}</p>
                         </div>
                         <div className='ingredient-container'>
-                          <p className='ingredients'><p style={{fontWeight: 'bold'}}><p className='need'>What you     will need:</p></p> {item.recipe.ingredientLines[0].length < 70 ? item.recipe.ingredientLines[0] : null }</p>
+                          <p className='ingredients'><p style={{fontWeight: 'bold'}}><p className='need'>What you will need:</p></p> {item.recipe.ingredientLines[0].length < 70 ? item.recipe.ingredientLines[0] : null }</p>
                           {console.log(item.recipe.ingredientLines[1].length)}
                           {item.recipe.ingredientLines[1].length < 70 ? <p className='ingredients'>{item.recipe.ingredientLines[1]}</p> : null}
                           {item.recipe.ingredientLines[2].length < 70 ? <p className='ingredients'>{item.recipe.ingredientLines[2]}</p> : null}
